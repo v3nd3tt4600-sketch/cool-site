@@ -1,0 +1,141 @@
+
+/* Center an image but nudge it slightly to the left
+	 Usage: add class="center-image" to the <img> element */
+.center-image {
+	display: block;        /* allow margin auto to center */
+	margin-left: auto;
+	margin-right: auto;
+	transform: translateX(-200px); /* push slightly to the left */
+	/* Optional: ensure it scales nicely */
+	max-width: 100%;
+	height: 200px; /* or any desired height */
+    width: 200px; /* maintain aspect ratio */
+}
+
+/* If you prefer to target all images inside a container, e.g. .hero img,
+	 replace selector with the appropriate one. */
+
+h2 {
+    text-align: left; /* Center text for headings and paragraphs */
+    transform: translateX(541px); /* push slightly to the left */
+}
+
+h1 {
+    text-align: center; /* Center text for headings and paragraphs */
+    transform: translateY(-545px); /* push slightly up */
+}
+
+/* Reduce spacing between paragraphs */
+h4 {
+	line-height: 1.15; /* bring lines within a paragraph closer */
+	margin-top: 0.25em;
+	margin-bottom: 0.25em;
+    transform:translateX(541px); /* push slightly to the right */
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 0.85rem 1.4rem;
+    min-width: 200px;
+    line-height: 1.15; /* bring lines within a paragraph closer */
+    margin-top: 1em;
+    margin-bottom: -0.50em;
+    transform: translateX(541px); /* push slightly to the right */
+    border: 2px solid lightgray; /* add a border to the button */
+    border-radius: 4px; /* optional: add rounded corners */
+}
+
+.button2 {
+    display: block;
+    font-size: 1.2rem;
+    padding: 0.85rem 1.4rem;
+    min-width: 200px;
+    line-height: 1.15; /* bring lines within a paragraph closer */
+    margin-top: 1.75em; /* add spacing above the button */
+    margin-bottom: 1.5em; /* add spacing below the button */
+    transform: translateX(541px); /* push slightly to the right */
+    border: 2px solid lightgray; /* add a border to the button */
+    border-radius: 4px; /* optional: add rounded corners */
+}
+
+.cat-image {
+    display: block;        /* allow margin auto to center */
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;           /* ensure image appears below previous elements */
+    transform: translateX(-190px); /* push slightly to the left */
+    margin-top: -10.5rem;      /* add spacing above the cat image */
+    /* Optional: ensure it scales nicely */
+    max-width: 100%;
+    width: 200px; /* set a specific width */
+    height: 75px; /* preserve aspect ratio */
+}
+
+table {
+    margin-top: 1em; /* add spacing above the table */
+    margin-bottom: 1em; /* add spacing below the table */
+}
+
+/* Make a specific h4 different from other h4 elements.
+In your HTML add: <h4 class="she-her">my favorite things</h4> */
+h4.she-her {
+    /* override shared h4 rules as needed */
+    transform: translateY(-550px) translateX(-8px); /* push down and slightly to the right */
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    }
+
+h4.ew-lesbian {
+    /* override shared h4 rules as needed */
+    transform: translateY(-558px) translateX(-1px); /* push down and slightly to the right */
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h4.birthdate {
+    /* override shared h4 rules as needed */
+    transform: translateY(-565px) translateX(-4px); /* push down and slightly to the right */
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+h4.personality {
+    /* override shared h4 rules as needed */
+    transform: translateY(-573px) translateX(-13px); /* push down and slightly to the right */
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.anime-girl {
+    display: block;        /* allow margin auto to align */
+    margin-left: auto;
+    margin-right: 800px; /* nudge slightly to the left */
+    clear: none;
+    transform: translateY(-475px) translateX(-20px); /* push down and slightly to the right */
+    margin-top: 0;
+    /* Optional: ensure it scales nicely */
+    max-width: 100%;
+    width: 44px; /* set a specific width */
+    height: 44px; /* preserve aspect ratio */
+}
+
+.anime-girl-2 {
+    display: block;        /* allow margin auto to align */
+    margin-left: auto;
+    margin-right: 800px; /* nudge slightly to the left */
+    clear: none;
+    transform: translateY(-519px) translateX(33px); /* push down and slightly to the right */
+    margin-top: 0;
+    /* Optional: ensure it scales nicely */
+    max-width: 100%;
+    width: 44px; /* set a specific width */
+    height: 44px; /* preserve aspect ratio */
+}
