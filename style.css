@@ -22,7 +22,7 @@ h2 {
 
 h1 {
     text-align: center; /* Center text for headings and paragraphs */
-    transform: translateY(-545px); /* push slightly up */
+    transform: translateY(-560px); /* push slightly up */
 }
 
 /* Reduce spacing between paragraphs */
@@ -80,7 +80,7 @@ table {
 In your HTML add: <h4 class="she-her">my favorite things</h4> */
 h4.she-her {
     /* override shared h4 rules as needed */
-    transform: translateY(-550px) translateX(-8px); /* push down and slightly to the right */
+    transform: translateY(-564px) translateX(-8px); /* push down and slightly to the right */
     text-align: center;
     line-height: 1.2;
     margin-top: 0.5em;
@@ -89,7 +89,7 @@ h4.she-her {
 
 h4.ew-lesbian {
     /* override shared h4 rules as needed */
-    transform: translateY(-558px) translateX(-1px); /* push down and slightly to the right */
+    transform: translateY(-568px) translateX(-1px); /* push down and slightly to the right */
     text-align: center;
     line-height: 1.2;
     margin-top: 0.5em;
@@ -98,7 +98,7 @@ h4.ew-lesbian {
 
 h4.birthdate {
     /* override shared h4 rules as needed */
-    transform: translateY(-565px) translateX(-4px); /* push down and slightly to the right */
+    transform: translateY(-568px) translateX(-4px); /* push down and slightly to the right */
     text-align: center;
     line-height: 1.2;
     margin-top: 0.5em;
@@ -132,10 +132,52 @@ h4.personality {
     margin-left: auto;
     margin-right: 800px; /* nudge slightly to the left */
     clear: none;
-    transform: translateY(-519px) translateX(33px); /* push down and slightly to the right */
+    transform: translateY(-519px) translateX(37px); /* push down and slightly to the right */
     margin-top: 0;
     /* Optional: ensure it scales nicely */
     max-width: 100%;
     width: 44px; /* set a specific width */
     height: 44px; /* preserve aspect ratio */
 }
+
+.anime-girl-3 {
+    display: block;        /* allow margin auto to align */
+    margin-left: auto;
+    margin-right: 800px; /* nudge slightly to the left */
+    clear: none;
+    transform: translateY(-563px) translateX(96px); /* push down and slightly to the right */
+    margin-top: 0;
+    /* Optional: ensure it scales nicely */
+    max-width: 100%;
+    width: 44px; /* set a specific width */
+    height: 44px; /* preserve aspect ratio */
+}
+
+.border-box {
+    box-sizing: border-box; /* include padding and border in element's total width and height */
+    width: 155px;           /* fixed width suitable for a list box */
+    height: 200px;          /* fixed height suitable for a list box */
+    max-width: 100%;
+    padding: 16px;          /* more space between border and content */
+    border: 1px solid #ccc; /* visible border for the box */
+    border-radius: 6px;     /* slight rounding */
+    background: #fafafa;    /* subtle background to separate from page */
+    color: #222;       /* text color for readability */
+    margin: 0;              /* reset default margins */
+    position: absolute;     /* center the box on the screen */
+    top: 50%; /* center vertically */
+    left: 57.6%; /* center horizontally */
+    transform: translate(-103%, -50%);
+}
+
+.border-box ul {
+    list-style: disc inside; /* show bullets inside the box */
+    padding: 0; /* remove default padding */
+    margin: 0; /* remove default margin */
+    line-height: 1.6; /* increase spacing between lines */
+}
+
+.border-box ul {
+    margin: 1rem 0;      /* more spacing between items */
+}
+
