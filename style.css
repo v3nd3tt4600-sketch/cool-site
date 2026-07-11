@@ -61,6 +61,7 @@ button {
 }
 
 .cat-image {
+    transform: translateY(-180px) translateX(-190px);
 	display: block;        /* allow margin auto to center */
 	margin-left: auto;
 	margin-right: auto;
