@@ -1,4 +1,7 @@
 
+@import 
+url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Teko:wght@300..700&display=swap');
+
 /* Center an image but nudge it slightly to the left
 	 Usage: add class="center-image" to the <img> element */
 .center-image {
@@ -17,20 +20,28 @@
 
 h2 {
 	text-align: center;
-    transform: translateX(-218px); 
+    transform: translateX(-228px); 
 	margin: 1rem auto;
 	max-width: 800px;
 }
 
 h1.name {
-    transform: translateY(-560px) translateX(-5px);
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+	font-weight: 600;
+    font-style: normal;
+    transform: translateY(-557px) translateX(-5px);
 	text-align: center;
 	margin: 1.5rem auto;
 }
 
 /* Reduce spacing between paragraphs */
 h4 {
-    transform: translateX(628px);
+    font-family: 'Open Sans', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    transform: translateX(619px);
     text-align: left;
 	line-height: 130%; /* bring lines within a paragraph closer */
 	margin-top: 0.25em;
@@ -38,7 +49,7 @@ h4 {
 }
 
 button {
-    transform: translateX(-190px); /* nudge left by 190px */
+    transform: translateX(-200px); /* nudge left by 190px */
 	display: block;
 	font-size: 1.2rem;
 	padding: 0.85rem 1.4rem;
@@ -61,7 +72,7 @@ button {
 }
 
 .cat-image {
-    transform: translateY(-180px) translateX(-190px);
+    transform: translateY(-190px) translateX(-200px);
 	display: block;        /* allow margin auto to center */
 	margin-left: auto;
 	margin-right: auto;
@@ -73,15 +84,42 @@ button {
 }
 
 table {
+    transform: translateY(-659px) translateX(883px);
+    width: 200px; /* set a specific width */
+    height: auto; /* allow height to adjust based on content */
+    text-align:left;
 	margin-top: 1em; /* add spacing above the table */
 	margin-bottom: 1em; /* add spacing below the table */
+}
+
+table, th, tr {
+    border: 1px solid darkgray; /* add a border to the table */
+    border-collapse: collapse; /* collapse borders for a cleaner look */
+    padding: 0.5em 0.1rem; /* add padding inside table cells */
+    width:173px; /* set a specific width */
+}
+
+td {
+    border-collapse: collapse; /* ensure borders are separate for td */
+    padding: 0.5em 0.1rem; /* add padding inside table cells */
+}
+
+tr:nth-child(odd) {
+    height: 50px; /* set a specific height for odd rows */
+    background-color: lightgray; /* optional: add a background color for even rows */
+}
+
+tr:nth-child(even) {
+    width: 200; /* set a specific width for even rows */
+    height: 145px; /* set a specific height for even rows */
+    background-color: white; /* optional: add a background color for odd rows */
 }
 
 /* Make a specific h4 different from other h4 elements.
 In your HTML add: <h4 class="she-her">my favorite things</h4> */
 h4.she-her {
 	/* override shared h4 rules as needed */
-    transform: translateY(-560px) translateX(-12px);
+    transform: translateY(-562px) translateX(-12px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -90,7 +128,7 @@ h4.she-her {
 
 h4.ew-lesbian {
 	/* override shared h4 rules as needed */
-    transform: translateY(-562px) translateX(-4.8px);
+    transform: translateY(-569px) translateX(-4.8px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -99,7 +137,7 @@ h4.ew-lesbian {
 
 h4.birthdate {
 	/* override shared h4 rules as needed */
-    transform: translateY(-563px) translateX(-8.5px);
+    transform: translateY(-574px) translateX(-8.5px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -108,7 +146,7 @@ h4.birthdate {
 
 h4.personality {
 	/* override shared h4 rules as needed */
-    transform: translateY(-565px) translateX(-17.8px);
+    transform: translateY(-578px) translateX(-17.8px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -127,24 +165,11 @@ h4.personality {
 	vertical-align: middle;
 }
 
-.border-box {
-	box-sizing: border-box; /* include padding and border in element's total width and height */
-	width: 155px;           /* fixed width suitable for a list box */
-	height: 200px;          /* fixed height suitable for a list box */
-	max-width: 100%;
-	padding: 16px;          /* more space between border and content */
-	border: 1px solid #ccc; /* visible border for the box */
-	border-radius: 6px;     /* slight rounding */
-	background: #fafafa;    /* subtle background to separate from page */
-	color: #222;       /* text color for readability */
-	margin: 2rem auto;
-	position: relative;
-}
-
 .border-box ul {
 	list-style: disc inside; /* show bullets inside the box */
 	padding: 0; /* remove default padding */
 	margin: 1rem 0; /* more spacing between items */
 	line-height: 1.6; /* increase spacing between lines */
 }
+
 
