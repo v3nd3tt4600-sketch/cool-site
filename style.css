@@ -23,6 +23,7 @@ h2 {
 }
 
 h1 {
+    transform: translateY(-530px);
 	text-align: center;
 	margin: 1.5rem auto;
 }
