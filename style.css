@@ -8,8 +8,8 @@
 	margin-right: auto;
 	/* Optional: ensure it scales nicely */
 	max-width: 100%;
-	height: 180px; /* or any desired height */
-	width: 180px; /* maintain aspect ratio */
+	height: 205px; /* or any desired height */
+	width: 200px; /* maintain aspect ratio */
 }
 
 /* If you prefer to target all images inside a container, e.g. .hero img,
@@ -22,8 +22,8 @@ h2 {
 	max-width: 800px;
 }
 
-h1 {
-    transform: translateY(-530px);
+h1.name {
+    transform: translateY(-560px) translateX(-5px);
 	text-align: center;
 	margin: 1.5rem auto;
 }
@@ -81,6 +81,7 @@ table {
 In your HTML add: <h4 class="she-her">my favorite things</h4> */
 h4.she-her {
 	/* override shared h4 rules as needed */
+    transform: translateY(-560px) translateX(-12px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -89,6 +90,7 @@ h4.she-her {
 
 h4.ew-lesbian {
 	/* override shared h4 rules as needed */
+    transform: translateY(-562px) translateX(-4.8px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -97,6 +99,7 @@ h4.ew-lesbian {
 
 h4.birthdate {
 	/* override shared h4 rules as needed */
+    transform: translateY(-563px) translateX(-8.5px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -105,6 +108,7 @@ h4.birthdate {
 
 h4.personality {
 	/* override shared h4 rules as needed */
+    transform: translateY(-565px) translateX(-17.8px);
 	text-align: center;
 	line-height: 1.2;
 	margin-top: 0.5em;
@@ -114,6 +118,7 @@ h4.personality {
 .anime-girl,
 .anime-girl-2,
 .anime-girl-3 {
+    transform: translateY(-653px) translateX(875px);
 	display: inline-block;
 	margin: 0 0.5rem;
 	max-width: 100%;
