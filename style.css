@@ -37,6 +37,7 @@ h4 {
 }
 
 button {
+    transform: translateX(-190px); /* nudge left by 190px */
 	display: block;
 	font-size: 1.2rem;
 	padding: 0.85rem 1.4rem;
