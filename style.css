@@ -2,182 +2,141 @@
 /* Center an image but nudge it slightly to the left
 	 Usage: add class="center-image" to the <img> element */
 .center-image {
+    transform: translateX(-200px); /* nudge left by 200px */
 	display: block;        /* allow margin auto to center */
 	margin-left: auto;
 	margin-right: auto;
-	transform: translateX(-200px); /* push slightly to the left */
 	/* Optional: ensure it scales nicely */
 	max-width: 100%;
-	height: 200px; /* or any desired height */
-    width: 200px; /* maintain aspect ratio */
+	height: 180px; /* or any desired height */
+	width: 180px; /* maintain aspect ratio */
 }
 
 /* If you prefer to target all images inside a container, e.g. .hero img,
 	 replace selector with the appropriate one. */
 
 h2 {
-    text-align: left; /* Center text for headings and paragraphs */
-    transform: translateX(541px); /* push slightly to the left */
+	text-align: center;
+    transform: translateX(-218px); 
+	margin: 1rem auto;
+	max-width: 800px;
 }
 
 h1 {
-    text-align: center; /* Center text for headings and paragraphs */
-    transform: translateY(-560px); /* push slightly up */
+	text-align: center;
+	margin: 1.5rem auto;
 }
 
 /* Reduce spacing between paragraphs */
 h4 {
-	line-height: 1.15; /* bring lines within a paragraph closer */
+    transform: translateX(-218px);
+    text-align: center;
+	line-height: 130%; /* bring lines within a paragraph closer */
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
-    transform:translateX(541px); /* push slightly to the right */
 }
 
 button {
-    font-size: 1.2rem;
-    padding: 0.85rem 1.4rem;
-    min-width: 200px;
-    line-height: 1.15; /* bring lines within a paragraph closer */
-    margin-top: 1em;
-    margin-bottom: -0.50em;
-    transform: translateX(541px); /* push slightly to the right */
-    border: 2px solid lightgray; /* add a border to the button */
-    border-radius: 4px; /* optional: add rounded corners */
+	display: block;
+	font-size: 1.2rem;
+	padding: 0.85rem 1.4rem;
+	min-width: 200px;
+	line-height: 1.15; /* bring lines within a paragraph closer */
+	margin: 1em auto -0.5em;
+	border: 2px solid lightgray; /* add a border to the button */
+	border-radius: 4px; /* optional: add rounded corners */
 }
 
 .button2 {
-    display: block;
-    font-size: 1.2rem;
-    padding: 0.85rem 1.4rem;
-    min-width: 200px;
-    line-height: 1.15; /* bring lines within a paragraph closer */
-    margin-top: 1.75em; /* add spacing above the button */
-    margin-bottom: 1.5em; /* add spacing below the button */
-    transform: translateX(541px); /* push slightly to the right */
-    border: 2px solid lightgray; /* add a border to the button */
-    border-radius: 4px; /* optional: add rounded corners */
+	display: block;
+	font-size: 1.2rem;
+	padding: 0.85rem 1.4rem;
+	min-width: 200px;
+	line-height: 1.15; /* bring lines within a paragraph closer */
+	margin: 1.75em auto 1.5em;
+	border: 2px solid lightgray; /* add a border to the button */
+	border-radius: 4px; /* optional: add rounded corners */
 }
 
 .cat-image {
-    display: block;        /* allow margin auto to center */
-    margin-left: auto;
-    margin-right: auto;
-    clear: both;           /* ensure image appears below previous elements */
-    transform: translateX(-190px); /* push slightly to the left */
-    margin-top: -10.5rem;      /* add spacing above the cat image */
-    /* Optional: ensure it scales nicely */
-    max-width: 100%;
-    width: 200px; /* set a specific width */
-    height: 75px; /* preserve aspect ratio */
+	display: block;        /* allow margin auto to center */
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	/* Optional: ensure it scales nicely */
+	max-width: 100%;
+	width: 200px; /* set a specific width */
+	height: 75px; /* preserve aspect ratio */
 }
 
 table {
-    margin-top: 1em; /* add spacing above the table */
-    margin-bottom: 1em; /* add spacing below the table */
+	margin-top: 1em; /* add spacing above the table */
+	margin-bottom: 1em; /* add spacing below the table */
 }
 
 /* Make a specific h4 different from other h4 elements.
 In your HTML add: <h4 class="she-her">my favorite things</h4> */
 h4.she-her {
-    /* override shared h4 rules as needed */
-    transform: translateY(-564px) translateX(-8px); /* push down and slightly to the right */
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    }
+	/* override shared h4 rules as needed */
+	text-align: center;
+	line-height: 1.2;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
 
 h4.ew-lesbian {
-    /* override shared h4 rules as needed */
-    transform: translateY(-568px) translateX(-1px); /* push down and slightly to the right */
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+	/* override shared h4 rules as needed */
+	text-align: center;
+	line-height: 1.2;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 h4.birthdate {
-    /* override shared h4 rules as needed */
-    transform: translateY(-568px) translateX(-4px); /* push down and slightly to the right */
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+	/* override shared h4 rules as needed */
+	text-align: center;
+	line-height: 1.2;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 h4.personality {
-    /* override shared h4 rules as needed */
-    transform: translateY(-573px) translateX(-13px); /* push down and slightly to the right */
-    text-align: center;
-    line-height: 1.2;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+	/* override shared h4 rules as needed */
+	text-align: center;
+	line-height: 1.2;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
-.anime-girl {
-    display: block;        /* allow margin auto to align */
-    margin-left: auto;
-    margin-right: 800px; /* nudge slightly to the left */
-    clear: none;
-    transform: translateY(-475px) translateX(-20px); /* push down and slightly to the right */
-    margin-top: 0;
-    /* Optional: ensure it scales nicely */
-    max-width: 100%;
-    width: 44px; /* set a specific width */
-    height: 44px; /* preserve aspect ratio */
-}
-
-.anime-girl-2 {
-    display: block;        /* allow margin auto to align */
-    margin-left: auto;
-    margin-right: 800px; /* nudge slightly to the left */
-    clear: none;
-    transform: translateY(-519px) translateX(37px); /* push down and slightly to the right */
-    margin-top: 0;
-    /* Optional: ensure it scales nicely */
-    max-width: 100%;
-    width: 44px; /* set a specific width */
-    height: 44px; /* preserve aspect ratio */
-}
-
+.anime-girl,
+.anime-girl-2,
 .anime-girl-3 {
-    display: block;        /* allow margin auto to align */
-    margin-left: auto;
-    margin-right: 800px; /* nudge slightly to the left */
-    clear: none;
-    transform: translateY(-563px) translateX(96px); /* push down and slightly to the right */
-    margin-top: 0;
-    /* Optional: ensure it scales nicely */
-    max-width: 100%;
-    width: 44px; /* set a specific width */
-    height: 44px; /* preserve aspect ratio */
+	display: inline-block;
+	margin: 0 0.5rem;
+	max-width: 100%;
+	width: 44px; /* set a specific width */
+	height: 44px; /* preserve aspect ratio */
+	vertical-align: middle;
 }
 
 .border-box {
-    box-sizing: border-box; /* include padding and border in element's total width and height */
-    width: 155px;           /* fixed width suitable for a list box */
-    height: 200px;          /* fixed height suitable for a list box */
-    max-width: 100%;
-    padding: 16px;          /* more space between border and content */
-    border: 1px solid #ccc; /* visible border for the box */
-    border-radius: 6px;     /* slight rounding */
-    background: #fafafa;    /* subtle background to separate from page */
-    color: #222;       /* text color for readability */
-    margin: 0;              /* reset default margins */
-    position: absolute;     /* center the box on the screen */
-    top: 50%; /* center vertically */
-    left: 57.6%; /* center horizontally */
-    transform: translate(-103%, -50%);
+	box-sizing: border-box; /* include padding and border in element's total width and height */
+	width: 155px;           /* fixed width suitable for a list box */
+	height: 200px;          /* fixed height suitable for a list box */
+	max-width: 100%;
+	padding: 16px;          /* more space between border and content */
+	border: 1px solid #ccc; /* visible border for the box */
+	border-radius: 6px;     /* slight rounding */
+	background: #fafafa;    /* subtle background to separate from page */
+	color: #222;       /* text color for readability */
+	margin: 2rem auto;
+	position: relative;
 }
 
 .border-box ul {
-    list-style: disc inside; /* show bullets inside the box */
-    padding: 0; /* remove default padding */
-    margin: 0; /* remove default margin */
-    line-height: 1.6; /* increase spacing between lines */
-}
-
-.border-box ul {
-    margin: 1rem 0;      /* more spacing between items */
+	list-style: disc inside; /* show bullets inside the box */
+	padding: 0; /* remove default padding */
+	margin: 1rem 0; /* more spacing between items */
+	line-height: 1.6; /* increase spacing between lines */
 }
 
