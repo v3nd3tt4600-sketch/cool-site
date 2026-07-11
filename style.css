@@ -29,8 +29,8 @@ h1 {
 
 /* Reduce spacing between paragraphs */
 h4 {
-    transform: translateX(-218px);
-    text-align: center;
+    transform: translateX(628px);
+    text-align: left;
 	line-height: 130%; /* bring lines within a paragraph closer */
 	margin-top: 0.25em;
 	margin-bottom: 0.25em;
