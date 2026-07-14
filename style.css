@@ -86,7 +86,6 @@ button {
 table {
     transform: translateY(-659px) translateX(883px);
     width: 200px; /* set a specific width */
-    height: auto; /* allow height to adjust based on content */
     text-align:left;
 	margin-top: 1em; /* add spacing above the table */
 	margin-bottom: 1em; /* add spacing below the table */
@@ -110,8 +109,8 @@ tr:nth-child(odd) {
 }
 
 tr:nth-child(even) {
-    width: 200; /* set a specific width for even rows */
-    height: 145px; /* set a specific height for even rows */
+    width: 200px; /* set a specific width for even rows */
+    height: 50px; /* set a specific height for even rows */
     background-color: white; /* optional: add a background color for odd rows */
 }
 
@@ -172,4 +171,42 @@ h4.personality {
 	line-height: 1.6; /* increase spacing between lines */
 }
 
+h5.interests {
+	/* override shared h5 rules as needed */
+	font-weight: 600;
+	transform: translateY(-0.5px) translateX(16.5px);
+	text-align: left;
+	line-height: 1.6;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	font-family: 'Open Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 620;
+	font-style: normal;
+	font-size: 0.89rem; /* make text a bit larger */
+}
 
+h4.link {
+	/* override shared h4 rules as needed */
+	font-family: 'Open Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	transform: translateY(1px) translateX(14.5px);
+	text-align: left;
+}
+
+h5.disinterests {
+	font-family: 'Open Sans', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 620;
+	font-style: normal;
+	font-size: 0.89rem; /* make text a bit larger */
+	line-height: 1.6; /* bring lines closer together */
+	transform: translateY(-20px) translateX(15.5px);
+	text-align: left;
+}
+
+table.dislikes {
+	height: 10px; /* reduced height for the dislikes table */
+}
